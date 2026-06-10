@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrthodoxApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.OrthodoxApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Icon"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.OrthodoxApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KomboskiniActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.OrthodoxApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Prayers"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.OrthodoxApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AppSetting"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.OrthodoxApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BookListActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Chaps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChapterListActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Chaps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VerseListActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.HolyBible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DetailedCalendarActivity"
+            android:exported="true"
+            android:theme="@style/Theme.OrthodoxApp">
+        </activity>
+
+        <activity android:name=".BibleWebViewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.OrthodoxApp">
+        </activity>
+
+        <receiver android:name=".OrthoCalendarWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="wadotu.orthodoxy.ortholife.ACTION_REFRESH" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/ortho_calendar_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>

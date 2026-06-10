@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- about text size -->
+    <string name="smalltext">작은글씨</string>
+    <string name="mdmtext">중간</string>
+    <string name="ltext">큰글씨</string>
+</resources>

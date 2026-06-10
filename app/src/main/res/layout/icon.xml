@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imageList"
+    android:theme="@style/Theme.OrthodoxApp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingTop="10dp"
+    android:layout_marginTop="30sp"
+    android:layout_marginBottom="30sp"
+    android:paddingBottom="10dp"/>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- about text size -->
+    <string name="smalltext">Μικρό</string>
+    <string name="mdmtext">Μεσαίο</string>
+    <string name="ltext">Μεγάλο</string>
+</resources>

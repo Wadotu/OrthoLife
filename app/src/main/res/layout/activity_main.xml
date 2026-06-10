@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"> <!-- 화면 높이를 꽉 채우도록 설정 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="48dp"
+        android:paddingBottom="48dp">
+
+        <!-- 최상단 설정 버튼 (보통 우측 상단 배치가 사용자에게 가장 익숙합니다) -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp">
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:text="@string/settings_icon"
+                android:textSize="32sp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:contentDescription="@string/settings_icon" />
+        </FrameLayout>
+
+        <!-- 캘린더 정보 컨테이너 -->
+        <LinearLayout
+            android:id="@+id/calendarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/rounded_card_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gold"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Sunday, June 7, 2026" />
+
+            <ImageView
+                android:id="@+id/iv_main_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/icons"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_feast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textAlignment="center"
+                android:textColor="@color/ivory"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Feast of the Holy Spirit" />
+
+            <TextView
+                android:id="@+id/tv_tone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/ivory"
+                android:textSize="14sp"
+                tools:text="Tone 1" />
+
+            <TextView
+                android:id="@+id/tv_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/accent_rose"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Fast Free" />
+
+            <TextView
+                android:id="@+id/tv_daily_verse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontStyle="italic"
+                android:textColor="@color/gold"
+                android:textSize="14sp"
+                tools:text="Matthew 5:1-12" />
+        </LinearLayout>
+
+        <!-- 앱 아이콘 -->
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher_round" />
+
+        <!-- 메인 메뉴 버튼들 (너비를 맞추어 정돈된 느낌 제공) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="48dp">
+
+            <Button
+                android:id="@+id/btn_holybible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minHeight="56dp"
+                android:text="@string/bible" />
+
+            <Button
+                android:id="@+id/btn_kombo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minHeight="56dp"
+                android:text="@string/prayer_rope" />
+
+            <Button
+                android:id="@+id/btn_prayers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minHeight="56dp"
+                android:text="@string/prayers" />
+
+            <Button
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minHeight="56dp"
+                android:text="@string/icons" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

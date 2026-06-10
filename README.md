@@ -81,7 +81,7 @@ The API provides scripture readings in an arbitrary order.
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/OrthoLife.git
+    git clone https://github.com/Wadotu/OrthoLife.git
     ```
 2.  Open the project in **Android Studio Ladybug (2024.2.1) or higher**.
 3.  Ensure you have **SDK 37** installed via the SDK Manager.
